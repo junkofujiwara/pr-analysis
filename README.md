@@ -14,7 +14,9 @@ This script generates csv files with the following information about pull reques
 
 ## Requirements
 - Python 3.6 or higher
-- GitHub Personal Access Token ("Pull requests" repository permissions (read))
+- GitHub Personal Access Token 
+  - "Metadata" repository permissions (read)
+  - "Pull requests" repository permissions (read)
 - `pip install -r requirements.txt`
 
 ### Usage
@@ -25,4 +27,5 @@ For only one repository<br>
 `python pr.py -o <organization> -r <repository> -t <github_token>`
 
 ### Reference
-https://docs.github.com/ja/rest/pulls/pulls?apiVersion=2022-11-28#list-pull-requests
+https://docs.github.com/en/rest/pulls/pulls?apiVersion=2022-11-28#list-pull-requests
+https://docs.github.com/en/enterprise-cloud@latest/rest/repos/repos?apiVersion=2022-11-28
